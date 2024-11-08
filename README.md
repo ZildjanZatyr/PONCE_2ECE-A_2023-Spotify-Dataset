@@ -1,4 +1,32 @@
-# 🎵 Exploratory Data Analysis on Spotify 2023 Dataset 🎵
+# 🎵Exploratory Data Analysis on Spotify 2023 Dataset🎵
+
+## Introduction
+This github repository
+
+## Table of Contents
+1. Introduction
+2. Dataset Overview
+   - s
+4. Basic Descriptive Statistics
+   - s
+6. Top Performers
+   - s
+8. Temporal Trends
+   - Yearly Released Tracks
+   - Track Distribution Count
+   - Annual Musical Attributes
+   - Monthly Released Tracks
+10. Genre and Music Characteristics
+    - s
+12. Platform Popularity
+    - s
+14. Advanced Analysis
+    - s
+16. Conclusion
+
+
+
+
 
 ## Dataset Overview
 > This section dives into the analytic display of data 
