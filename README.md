@@ -4,7 +4,7 @@
 This github repository
 
 ## Table of Contents
-1. Introduction
+[Introduction](#-Introduction)
 2. Dataset Overview
    - s
 4. Basic Descriptive Statistics
