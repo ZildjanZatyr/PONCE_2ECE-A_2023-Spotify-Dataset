@@ -9,9 +9,9 @@ This github repository
    - s
 4. [Basic Descriptive Statistics](#-BasicDescriptiveStatistics)
    - s
-6. Top Performers
+6. [Top Performers](#-TopPerformers)
    - s
-8. Temporal Trends
+8. [Temporal Trends](#-TemporalTrends)
    - Yearly Released Tracks
    - Track Distribution Count
    - Annual Musical Attributes
