@@ -4,10 +4,10 @@
 This github repository
 
 ## Table of Contents
-[Introduction](#-Introduction)
-2. Dataset Overview
+1. [Introduction](#-Introduction)
+2. [Dataset Overview](#-DatasetOverview) 
    - s
-4. Basic Descriptive Statistics
+4. [Basic Descriptive Statistics](#-BasicDescriptiveStatistics)
    - s
 6. Top Performers
    - s
