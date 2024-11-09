@@ -1,4 +1,6 @@
 # 🎵Exploratory Data Analysis on Spotify 2023 Dataset🎵
+![image](https://github.com/user-attachments/assets/0bd0cf79-8893-420e-a050-64192a3ad80f)
+
 
 ## 🖥️ Introduction
 This repository serves as a comprehensive overview of the most streamed Spotify Songs of 2023, highlighting the tracks that defined the musical memoir of the past year. This serves as an extensive guide containing yearly to monthly trends, including top artists, frequently played songs, and musical attributes that shaped 2023 and defined our Generation Z. 
@@ -235,7 +237,8 @@ plt.show()
 ```
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/f0019893-d7ab-4f9f-bdaf-5faabdc0d5b5)
-
+#### *🔎 Key Findings:*
+This analytical graph demonstrates the number of tracks released per year since a decade; starting from 1930 all the way to 2023. There is a significant spike in the tracks released in the year 2022, followed by 2023, and then 2021. The spike in 2022 has reached an all time high shadowing its competitor by almost double or even both 2023 and 2021 combined altogether. 
 
 ### B. Tracks Released by Artist Count
 #### 💻 *Code:*
@@ -412,7 +415,6 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/31c99e96-2cf6-4e17-afed-c8772251e19c)
 
 
-
 ## 7. Advanced Analysis 📑
 ### A. Major vs. Minor Keys Streamability
 #### 💻 *Code:*
@@ -430,7 +432,8 @@ plt.show()
 ```
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/1aac6f02-3392-4229-afa4-a6da4b91c920)
-
+#### *🔎 Key Findings:*
+This analysis aimed to explore the distribution of musical keys and their corresponding modes within a dataset of tracks from the Spotify platform. The bar plot reveals how many tracks are associated with each musical key, highlighting the most common keys used in the dataset.
 
 ### B. Most Frequently Appearing Artists
 #### 💻 *Code:*
@@ -469,10 +472,14 @@ plt.show()
 ```
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/91cdf229-826a-41f0-8da6-0693ad6c8667)
-
+#### *🔎 Key Findings:*
+Findings were visualized with a horizontal bar chart effectively displaying the total appearances of each artist. 
 
 ## 🔐 Conclusion
-This repository encapsulates a vibrant year in music history, showcasing tracks that resonated with listeners and broke record around the globe. 
+This repository encapsulates a vibrant year in music history, showcasing tracks that resonated with listeners and broke record around the globe. We explored the appearances of various artists across multiple streaming platforms, specifically focusing on their presence in playlists and charts. The highlight of this data reveals the top 10 artists with the highest total appearances, showcasing their popularity and reach across these platforms. Such insights are valuable for music  industry stakeholders, including record labels, marketers, and artists themselves, as they navigate the competitive landscape of music streaming and audience engagement.
+> [!NOTE]
+> #### With 2023 wrapped, Kaggle has made available the Most Streamed Spotify Songs of 2024. See attached link below: 
+> https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024
 
 ## 👨‍💻 Author
 #### *Zildjan Zatyr C. Ponce || 2ECE - A* 
