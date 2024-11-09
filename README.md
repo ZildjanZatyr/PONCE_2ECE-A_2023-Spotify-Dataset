@@ -11,28 +11,6 @@ This repository serves as a comprehensive overview of the most streamed Spotify 
 > [!IMPORTANT]
 > #### This repository wouldn't be possible without 2023 Spotify Data Frame.
 > spotify-2023.csv
-## 📚 Table of Contents
-1. [Introduction](#-Introduction)
-2. [Dataset Overview](#-DatasetOverview) 
-   - s
-4. [Basic Descriptive Statistics](#-BasicDescriptiveStatistics)
-   - s
-6. [Top Performers](#-TopPerformers)
-   - s
-8. [Temporal Trends](#-TemporalTrends)
-   - Yearly Released Tracks
-   - Track Distribution Count
-   - Annual Musical Attributes
-   - Monthly Released Tracks
-10. Genre and Music Characteristics
-    - s
-12. Platform Popularity
-    - s
-14. Advanced Analysis
-    - s
-16. Conclusion
-
-
 
 ## 1. Dataset Overview 📑
 ### A. 2023 Spotify Dataframe
