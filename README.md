@@ -1,9 +1,15 @@
 # 🎵Exploratory Data Analysis on Spotify 2023 Dataset🎵
 
-## Introduction
-This github repository
+## 🖥️ Introduction
+This repository serves as a comprehensive overview of the most streamed Spotify Songs of 2023, highlighting the tracks that defined the musical memoir of the past year. This serves as an extensive guide containing yearly to monthly trends, including top artists, frequently played songs, and musical attributes that shaped 2023 and defined our Generation Z. 
+> [!NOTE]
+> #### All information gathered in this repository is sourced from the dataset available at Kaggle.
+> https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
 
-## Table of Contents
+> [!IMPORTANT]
+> #### This repository wouldn't be possible without 2023 Spotify Data Frame.
+> spotify-2023.csv
+## 📚 Table of Contents
 1. [Introduction](#-Introduction)
 2. [Dataset Overview](#-DatasetOverview) 
    - s
@@ -26,7 +32,7 @@ This github repository
 
 
 
-## 1. Dataset Overview
+## 1. Dataset Overview 📑
 ### A. 2023 Spotify Dataframe
 #### 💻 *Code:*
 ```Ruby
@@ -139,7 +145,7 @@ dtype: int64
 ```
 
 
-## 2. Basic Descriptive Statistics
+## 2. Basic Descriptive Statistics 📑
 ### A. Statistical Description
 #### 💻 *Code:*
 ```Ruby
@@ -150,7 +156,7 @@ spotify.describe()
 ![image](https://github.com/user-attachments/assets/6ffd061b-a044-4f5a-b160-d6851fa8c557)
 
 
-### B. Measure of Central Tendency
+### B. Measure of Central Tendency 
 #### 💻 *Code:*
 ```Ruby
 df = pd.DataFrame(spotify)
@@ -176,7 +182,7 @@ The Standard Deviation is: 566856949.04
 ```
 
 
-## 3. Spotify Top Performers
+## 3. Spotify Top Performers 📑
 ### A. 2023's Spotify Top Performing Artists
 #### 💻 *Code:*
 ```Ruby
@@ -211,7 +217,7 @@ top_artists_df
 
 
 
-## 4. Temporal Trends
+## 4. Temporal Trends 📑
 ### A. Tracks Released Per Year
 #### 💻 *Code:*
 ```Ruby
@@ -313,7 +319,7 @@ plt.show()
 
 
 
-## 5. Genre and Music Characteristics
+## 5. Genre and Music Characteristics 📑
 ### A. Streams vs. Musical Attributes
 #### 💻 *Code:*
 ```Ruby
@@ -334,7 +340,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/6fbc456c-3ece-46e2-9bc6-eebe34d97ca3)
 
 
-### B. Danceability_% vs. Energy_%
+### B. Danceability_% vs. Energy_% 📑
 #### 💻 *Code:*
 ```Ruby
 # Calculate the correlation coefficient
@@ -357,7 +363,7 @@ print(f'Correlation between danceability_% and energy_%: {correlation:.2f}')
 Correlation between danceability_% and energy_%: 0.20
 ```
 
-### C. Valence_% vs. Acousticness_%
+### C. Valence_% vs. Acousticness_% 📑
 #### 💻 *Code:*
 ```Ruby
 # Calculate the correlation coefficient
@@ -382,7 +388,7 @@ Correlation between valence_% and acousticness_%: -0.08
 ```
 
 
-## 6. Platform Popularity
+## 6. Platform Popularity 📑
 #### 💻 *Code:*
 ```Ruby
 # Convert specified columns to numeric
@@ -407,7 +413,7 @@ plt.show()
 
 
 
-## 7. Advanced Analysis
+## 7. Advanced Analysis 📑
 ### A. Major vs. Minor Keys Streamability
 #### 💻 *Code:*
 ```Ruby
@@ -465,8 +471,11 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/91cdf229-826a-41f0-8da6-0693ad6c8667)
 
 
+## 🔐 Conclusion
+This repository encapsulates a vibrant year in music history, showcasing tracks that resonated with listeners and broke record around the globe. 
 
-
-
-
+## 👨‍💻 Author
+#### *Zildjan Zatyr C. Ponce || 2ECE - A* 
+#### *University of Santo Tomas*
+#### *Submitted: November 9, 2024*
 
