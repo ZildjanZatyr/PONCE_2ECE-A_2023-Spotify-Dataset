@@ -26,10 +26,8 @@ This github repository
 
 
 
-
-
-## Dataset Overview
-> This section dives into the analytic display of data 
+## 1. Dataset Overview
+### A. 2023 Spotify Dataframe
 #### 💻 *Code:*
 ```Ruby
 # Import Python libraries to be used
@@ -45,7 +43,7 @@ spotify
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/d86cf563-8184-4d1a-a1c7-910f8b9bb49f) 
 
-
+### B. Dataset --> Rows and Columns
 #### 💻 *Code:*
 ```Ruby
 # How many rows and columns does the dataset contain?
@@ -64,7 +62,7 @@ shape_info
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/e04beb6b-c625-43ec-8b0c-1950272af785)
 
-
+### C. Dataset --> General Info
 #### 💻 *Code:*
 ```Ruby
 # Examine info per column containing non-null count and data type
@@ -105,7 +103,7 @@ dtypes: int64(17), object(7)
 memory usage: 178.8+ KB
 ```
 
-
+### D. Dataset --> Missing Values
 #### 💻 *Code:*
 ```Ruby
 # To check if there are any missing values
@@ -141,7 +139,8 @@ dtype: int64
 ```
 
 
-## Basic Descriptive Statistics
+## 2. Basic Descriptive Statistics
+### A. Statistical Description
 #### 💻 *Code:*
 ```Ruby
 # Obtain a statistical summary for the numerical columns in the spotify dataframe
@@ -151,6 +150,7 @@ spotify.describe()
 ![image](https://github.com/user-attachments/assets/6ffd061b-a044-4f5a-b160-d6851fa8c557)
 
 
+### B. Measure of Central Tendency
 #### 💻 *Code:*
 ```Ruby
 df = pd.DataFrame(spotify)
@@ -176,7 +176,8 @@ The Standard Deviation is: 566856949.04
 ```
 
 
-## Spotify Top Performers
+## 3. Spotify Top Performers
+### A. 2023's Spotify Top Performing Artists
 #### 💻 *Code:*
 ```Ruby
 # Convert 'streams' to numeric after removing commas
@@ -189,7 +190,7 @@ sorted_df
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/51795d9d-69df-4b62-b0f9-e5b9e7eff25e)
 
-### Spotify top Artists
+### B. Top Performing Artist by Track Count
 #### 💻 *Code:*
 ```Ruby
 top_artists = spotify.assign(artist = spotify['artist(s)_name'].str.split(', ')).explode('artist')
@@ -210,7 +211,8 @@ top_artists_df
 
 
 
-## Temporal Trends
+## 4. Temporal Trends
+### A. Tracks Released Per Year
 #### 💻 *Code:*
 ```Ruby
 # Groups yearly then counts the number of tracks 
@@ -229,6 +231,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/f0019893-d7ab-4f9f-bdaf-5faabdc0d5b5)
 
 
+### B. Tracks Released by Artist Count
 #### 💻 *Code:*
 ```Ruby
 # Groups by year then counts the number of tracks
@@ -246,6 +249,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/f251a0a3-7277-45c3-943d-a62287a2fbec)
 
 
+### C. Yearly Average Musical Attributes
 #### 💻 *Code:*
 ```Ruby
 attributes_by_year = spotify.groupby('released_year')[['bpm', 'danceability_%', 'energy_%', 'acousticness_%', 'valence_%', 'instrumentalness_%', 'liveness_%', 'speechiness_%']].mean()
@@ -266,6 +270,8 @@ plt.show()
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/8390e0f6-da28-465f-b655-bc29eee1694f)
 
+
+### D. Tracks Released Per Month
 #### 💻 *Code:*
 ```Ruby
 tracks_per_month = spotify['released_month'].value_counts().sort_index()
@@ -284,7 +290,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/a765aad1-8efc-4ad7-a709-79b2b44fa1e4)
 
 
-
+### E. Monthly Average Musical Attributes
 #### 💻 *Code:*
 ```Ruby
 monthly_attributes = spotify.groupby('released_month')[['bpm', 'danceability_%', 'energy_%', 'acousticness_%', 'valence_%', 'instrumentalness_%', 'liveness_%', 'speechiness_%']].mean()
@@ -307,7 +313,8 @@ plt.show()
 
 
 
-## Genre and Music Characteristics
+## 5. Genre and Music Characteristics
+### A. Streams vs. Musical Attributes
 #### 💻 *Code:*
 ```Ruby
 # Convert specified columns to numeric, coercing errors to NaN
@@ -327,6 +334,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/6fbc456c-3ece-46e2-9bc6-eebe34d97ca3)
 
 
+### B. Danceability_% vs. Energy_%
 #### 💻 *Code:*
 ```Ruby
 # Calculate the correlation coefficient
@@ -349,6 +357,7 @@ print(f'Correlation between danceability_% and energy_%: {correlation:.2f}')
 Correlation between danceability_% and energy_%: 0.20
 ```
 
+### C. Valence_% vs. Acousticness_%
 #### 💻 *Code:*
 ```Ruby
 # Calculate the correlation coefficient
@@ -373,7 +382,7 @@ Correlation between valence_% and acousticness_%: -0.08
 ```
 
 
-## Platform Popularity
+## 6. Platform Popularity
 #### 💻 *Code:*
 ```Ruby
 # Convert specified columns to numeric
@@ -398,7 +407,8 @@ plt.show()
 
 
 
-## Advanced Analysis
+## 7. Advanced Analysis
+### A. Major vs. Minor Keys Streamability
 #### 💻 *Code:*
 ```Ruby
 key_plot = spotify.groupby(['key', 'mode']).size().reset_index(name = 'Count')
@@ -416,6 +426,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/1aac6f02-3392-4229-afa4-a6da4b91c920)
 
 
+### B. Most Frequently Appearing Artists
 #### 💻 *Code:*
 ```Ruby
 playlist_chart_columns = [
