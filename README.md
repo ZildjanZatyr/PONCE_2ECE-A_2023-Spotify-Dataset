@@ -43,7 +43,7 @@ spotify
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/d86cf563-8184-4d1a-a1c7-910f8b9bb49f) 
 
-### B. Dataset --> Rows and Columns
+### B. Dataset Rows and Columns
 #### 💻 *Code:*
 ```Ruby
 # How many rows and columns does the dataset contain?
@@ -62,7 +62,7 @@ shape_info
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/e04beb6b-c625-43ec-8b0c-1950272af785)
 
-### C. Dataset --> General Info
+### C. Dataset General Info
 #### 💻 *Code:*
 ```Ruby
 # Examine info per column containing non-null count and data type
@@ -103,7 +103,7 @@ dtypes: int64(17), object(7)
 memory usage: 178.8+ KB
 ```
 
-### D. Dataset --> Missing Values
+### D. Dataset Missing Values
 #### 💻 *Code:*
 ```Ruby
 # To check if there are any missing values
