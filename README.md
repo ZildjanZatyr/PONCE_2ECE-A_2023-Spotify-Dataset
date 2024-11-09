@@ -343,6 +343,8 @@ print(f'Correlation between danceability_% and energy_%: {correlation:.2f}')
 ```Ruby
 Correlation between danceability_% and energy_%: 0.20
 ```
+#### *🔎 Key Findings:*
+This analysis aimed to explore the relationship between two musical attributes: danceability and energy, within a dataset of tracks from Spotify. The correlation coefficient was calculated to quantify the strength and direction of the relationship between these two variables. Using a scatterplot, the calculated correlation coefficient between danceability and energy was printed, revealing a value of 0.20. This indicates a positive relationship between the two attributes.
 
 ### C. Valence_% vs. Acousticness_% 📑
 #### 💻 *Code:*
@@ -363,10 +365,11 @@ print(f'Correlation between valence_% and acousticness_%: {correlation:.2f}')
 ```
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/cd2bf586-7ca7-419c-826a-dfa533d703b4)
-
 ```Ruby
 Correlation between valence_% and acousticness_%: -0.08
 ```
+#### *🔎 Key Findings:*
+This analysis focused on examining the relationship between two musical attributes: valence and acousticness, within a dataset of tracks from Spotify. The correlation coefficient was calculated to quantify the strength and direction of the relationship between these two variables. Using a scatter plot, a correlation of -0.08 indicates a weak relationship between the two attributes. 
 
 
 ## 6. Platform Popularity 📑
