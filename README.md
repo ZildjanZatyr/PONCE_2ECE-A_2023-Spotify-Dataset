@@ -42,6 +42,7 @@ import seaborn as sns
 spotify = pd.read_csv('spotify-2023.csv', encoding = 'latin-1')
 spotify
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/d86cf563-8184-4d1a-a1c7-910f8b9bb49f) 
 
 
@@ -60,6 +61,7 @@ shape_info = pd.DataFrame({
 # Prints the dataframe
 shape_info
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/e04beb6b-c625-43ec-8b0c-1950272af785)
 
 
@@ -68,7 +70,7 @@ shape_info
 # Examine info per column containing non-null count and data type
 spotify.info()
 ```
-##### *Output:*
+###### *Output:*
 ```Ruby
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 953 entries, 0 to 952
@@ -109,7 +111,7 @@ memory usage: 178.8+ KB
 # To check if there are any missing values
 spotify.isnull().sum()
 ```
-##### *Output:* 
+###### *Output:*
 ```Ruby
 track_name               0
 artist(s)_name           0
@@ -145,6 +147,7 @@ dtype: int64
 # Obtain a statistical summary for the numerical columns in the spotify dataframe
 spotify.describe()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/6ffd061b-a044-4f5a-b160-d6851fa8c557)
 
 
@@ -165,7 +168,7 @@ print(f"The Mean is: {mean}")
 print(f"The Median is: {median}")
 print(f"The Standard Deviation is: {std}")
 ```
-##### *Output:*
+###### *Output:*
 ```Ruby
 The Mean is: 514137424.94
 The Median is: 290530915.0
@@ -183,6 +186,7 @@ spotify['streams'] = pd.to_numeric(spotify['streams'].astype(str).str.replace(',
 sorted_df = spotify.sort_values(by = 'streams', ascending = False).head(5).reset_index(drop = True)
 sorted_df
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/51795d9d-69df-4b62-b0f9-e5b9e7eff25e)
 
 ### Spotify top Artists
@@ -198,6 +202,7 @@ top_artists_df = top_5_artists.reset_index()
 top_artists_df.columns = ['Artist', 'Track Count']
 top_artists_df
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/492bd922-16a4-499c-8a6b-e91cdc985240)
 
 
@@ -220,6 +225,7 @@ plt.ylabel('Number of Tracks', fontsize = 11)
 plt.grid(axis = 'y', linestyle='--', alpha = 0.7)
 plt.show()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/f0019893-d7ab-4f9f-bdaf-5faabdc0d5b5)
 
 
@@ -236,6 +242,7 @@ plt.xlabel('Number of Artists', fontsize = 11)
 plt.ylabel('Number of Tracks', fontsize = 11)
 plt.show()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/f251a0a3-7277-45c3-943d-a62287a2fbec)
 
 #### 💻 *Code:*
@@ -255,7 +262,9 @@ plt.legend(title = 'Attributes')
 plt.grid(True)
 plt.show()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/8390e0f6-da28-465f-b655-bc29eee1694f)
+
 
 #### 💻 *Code:*
 ```Ruby
@@ -274,6 +283,7 @@ plt.grid(True)
 plt.xticks(ticks = range(1, 13), labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
 plt.show()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/81fb1b71-e712-4e78-ac0a-11a5a3eb8629)
 
 
@@ -294,7 +304,9 @@ plt.xticks(rotation = 45, ha = 'right', color = 'black')
 plt.yticks(rotation = 0, color = 'black')
 plt.show()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/6fbc456c-3ece-46e2-9bc6-eebe34d97ca3)
+
 
 #### 💻 *Code:*
 ```Ruby
@@ -312,6 +324,7 @@ plt.show()
 
 print(f'Correlation between danceability_% and energy_%: {correlation:.2f}')
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/b30d0bda-1a2e-4419-af32-a16cf0ac58cf)
 ```Ruby
 Correlation between danceability_% and energy_%: 0.20
@@ -333,6 +346,7 @@ plt.show()
 
 print(f'Correlation between valence_% and acousticness_%: {correlation:.2f}')
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/cd2bf586-7ca7-419c-826a-dfa533d703b4)
 
 ```Ruby
@@ -360,6 +374,7 @@ plt.ylabel('Platform', fontsize = 11)
 plt.xlabel('Number of Tracks', fontsize = 11)
 plt.show()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/31c99e96-2cf6-4e17-afed-c8772251e19c)
 
 
@@ -378,6 +393,7 @@ plt.xlabel('Key', fontsize = 11)
 plt.legend(title = 'mode')
 plt.show()
 ```
+###### *Output:*
 ![image](https://github.com/user-attachments/assets/35829383-82fa-47b1-894b-acd2c2d91dff)
 
 
@@ -415,7 +431,8 @@ for index, value in enumerate(top_10_artists['Total_Appearances']):
 
 plt.show()
 ```
-![Uploading image.png…]()
+###### *Output:*
+![image](https://github.com/user-attachments/assets/91cdf229-826a-41f0-8da6-0693ad6c8667)
 
 
 
