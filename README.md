@@ -406,14 +406,14 @@ key_plot = spotify.groupby(['key', 'mode']).size().reset_index(name = 'Count')
 # Generates the plot
 plt.figure(figsize = (12, 6))
 sns.barplot(data = key_plot, y = 'Count', x = 'key', hue = 'mode', palette = 'bwr', edgecolor = 'black' , dodge = True) 
-plt.title('Number of Tracks by Platform', fontsize = 16, fontweight = 'bold')
+plt.title('Average Streamability of Keys', fontsize = 16, fontweight = 'bold')
 plt.ylabel('Track Count', fontsize = 11)
 plt.xlabel('Key', fontsize = 11)
 plt.legend(title = 'mode')
 plt.show()
 ```
 ###### *Output:*
-![image](https://github.com/user-attachments/assets/35829383-82fa-47b1-894b-acd2c2d91dff)
+![image](https://github.com/user-attachments/assets/1aac6f02-3392-4229-afa4-a6da4b91c920)
 
 
 #### 💻 *Code:*
