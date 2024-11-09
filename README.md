@@ -8,9 +8,6 @@ This repository serves as a comprehensive overview of the most streamed Spotify 
 > #### All information gathered in this repository is sourced from the dataset available at Kaggle.
 > https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
 
-> [!IMPORTANT]
-> #### This repository wouldn't be possible without 2023 Spotify Data Frame.
-> spotify-2023.csv
 
 ## 1. Dataset Overview 📑
 ### A. 2023 Spotify Dataframe
@@ -26,6 +23,9 @@ import seaborn as sns
 spotify = pd.read_csv('spotify-2023.csv', encoding = 'latin-1')
 spotify
 ```
+> [!IMPORTANT]
+> #### This repository wouldn't be possible without 2023 Spotify Data Frame.
+> spotify-2023.csv
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/d86cf563-8184-4d1a-a1c7-910f8b9bb49f) 
 
