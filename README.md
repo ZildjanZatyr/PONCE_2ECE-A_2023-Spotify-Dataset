@@ -245,6 +245,7 @@ plt.show()
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/f251a0a3-7277-45c3-943d-a62287a2fbec)
 
+
 #### 💻 *Code:*
 ```Ruby
 attributes_by_year = spotify.groupby('released_year')[['bpm', 'danceability_%', 'energy_%', 'acousticness_%', 'valence_%', 'instrumentalness_%', 'liveness_%', 'speechiness_%']].mean()
@@ -264,6 +265,24 @@ plt.show()
 ```
 ###### *Output:*
 ![image](https://github.com/user-attachments/assets/8390e0f6-da28-465f-b655-bc29eee1694f)
+
+#### 💻 *Code:*
+```Ruby
+tracks_per_month = spotify['released_month'].value_counts().sort_index()
+
+# Generates the plot
+plt.figure(figsize = (12, 6))
+tracks_per_month.plot(kind = 'bar', color='green', edgecolor = 'black')
+plt.title('Number of Tracks Released Per Month', fontsize = 16, fontweight = 'bold')
+plt.xlabel('Month', fontsize = 11)
+plt.ylabel('Number of Tracks', fontsize = 11)
+plt.grid(axis = 'y', linestyle = '--', alpha = 0.5)
+plt.xticks(ticks = range(12), labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
+plt.show()
+```
+###### *Output:*
+![image](https://github.com/user-attachments/assets/a765aad1-8efc-4ad7-a709-79b2b44fa1e4)
+
 
 
 #### 💻 *Code:*
